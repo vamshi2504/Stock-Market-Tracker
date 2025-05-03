@@ -1,12 +1,88 @@
-# React + Vite
+## 📈 Stock Market Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A beginner-friendly React web app** that lets users visualize real-time stock prices with beautiful charts. Built using Firebase for authentication, Chart.js for visuals, and Alpha Vantage for market data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Features
 
-## Expanding the ESLint configuration
+* 🔐 Secure login/logout using Firebase Authentication
+* 🔍 Search stock by symbol (e.g., `AAPL`, `TSLA`)
+* 📊 Real-time line chart for daily closing prices
+* 🎨 Material UI-based responsive design
+* ⚠️ Error handling for API failures & invalid symbols
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🛠️ Tech Stack
+
+* **Frontend**: React.js, Chart.js, Material UI
+* **Authentication**: Firebase
+* **API**: Alpha Vantage ([https://www.alphavantage.co/](https://www.alphavantage.co/))
+
+---
+
+### 📁 Folder Structure
+
+```
+src/
+├── components/
+│   ├── Auth/
+│   ├── StockChart.js
+│   └── Dashboard.js
+├── services/
+│   └── alphaVantage.js
+├── firebase.js
+├── App.js
+```
+
+---
+
+### 🔧 Getting Started
+
+#### 1. Clone the repository
+
+```bash
+git clone https://github.com/vamshi2504/stock-market-tracker.git
+cd stock-market-tracker
+```
+
+#### 2. Install dependencies
+
+```bash
+npm install
+```
+
+#### 4. Run the app
+
+```bash
+npm start
+```
+
+---
+
+### 📚 Future Improvements
+
+* [ ] Firebase Firestore Watchlist
+* [ ] Support for intraday stock data
+* [ ] Compare multiple stocks on one chart
+* [ ] Dark mode toggle
+
+---
+
+### 🧠 Learnings
+
+This project helped me understand:
+
+* Working with third-party APIs (Alpha Vantage)
+* Using React Hooks and state management
+* Implementing authentication using Firebase
+* Data visualization with Chart.js
+
+---
+
+### 🤝 Contributing
+
+Pull requests are welcome! For major changes, open an issue first to discuss what you’d like to change.
+
+---
